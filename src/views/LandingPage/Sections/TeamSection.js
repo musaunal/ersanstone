@@ -18,7 +18,6 @@ import styles from "assets/jss/material-kit-react/views/landingPageSections/team
 
 import team1 from "assets/img/faces/abdullah.jpg";
 import team2 from "assets/img/faces/muratdayım.jpg";
-import team3 from "assets/img/faces/kendall.jpg";
 
 const useStyles = makeStyles(styles);
 
