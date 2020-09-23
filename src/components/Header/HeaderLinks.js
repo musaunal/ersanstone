@@ -23,7 +23,9 @@ export default function HeaderLinks(props) {
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
+          onClick={() => {
+            props.Scroll.animateScroll.scrollTo(600)
+          }}
           color="transparent"
           target="_blank"
           className={classes.navLink}
@@ -32,7 +34,9 @@ export default function HeaderLinks(props) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          // onClick={ () =>  }
+          onClick={() => {
+            props.Scroll.animateScroll.scrollTo(2150)
+          }}
           color="transparent"
           target="_blank"
           className={classes.navLink}
@@ -41,7 +45,9 @@ export default function HeaderLinks(props) {
       </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
+          onClick={() => {
+            props.Scroll.animateScroll.scrollTo(1150)
+          }}
           color="transparent"
           target="_blank"
           className={classes.navLink}
@@ -51,12 +57,12 @@ export default function HeaderLinks(props) {
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-twitter"
-          title="Follow us on twitter"
+          title="Bizi twitterda takip et"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/CreativeTim?ref=creativetim"
+            // href="https://twitter.com/CreativeTim?ref=creativetim"
             target="_blank"
             color="transparent"
             className={classes.navLink}
@@ -68,13 +74,13 @@ export default function HeaderLinks(props) {
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-facebook"
-          title="Follow us on facebook"
+          title="Bizi facebookta takip et"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
             color="transparent"
-            href="https://www.facebook.com/CreativeTim?ref=creativetim"
+            // href="https://www.facebook.com/CreativeTim?ref=creativetim"
             target="_blank"
             className={classes.navLink}
           >
@@ -85,13 +91,13 @@ export default function HeaderLinks(props) {
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-tooltip"
-          title="Follow us on instagram"
+          title="Bizi instagramda takip et"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+            // href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
             target="_blank"
             className={classes.navLink}
           >

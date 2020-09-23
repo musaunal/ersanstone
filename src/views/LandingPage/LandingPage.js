@@ -1,10 +1,7 @@
-import React from "react";
-// nodejs library that concatenates classes
+import React, { useRef } from 'react'
 import classNames from "classnames";
-// @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
-
-// @material-ui/icons
+import * as Scroll from 'react-scroll';
 
 // core components
 import Header from "components/Header/Header.js";
@@ -38,7 +35,7 @@ export default function LandingPage(props) {
         color="transparent"
         routes={dashboardRoutes}
         brand="Sadakat Mermer"
-        rightLinks={<HeaderLinks />}
+        rightLinks={<HeaderLinks Scroll={Scroll} />}
         fixed
         changeColorOnScroll={{
           height: 400,
@@ -49,13 +46,13 @@ export default function LandingPage(props) {
       <Parallax filter image={require("assets/img/mezarlık1.jpg")}>
         <div className={classes.container}>
           <GridContainer>
-            <GridItem xs={12} sm={60} md={12}>
+            <GridItem xs={12} sm={6} md={12}>
               <h1 className={classes.title}>Her Nefis Ölümü Tadacaktır</h1>
               <h4>
-                Bir Ömür Geçti Aldandım<br/>
-                Gaflet Uykusuna Daldım<br/>
-                Günahkar Şeytana kandım<br/>
-                Merhamet Et Bize<br/>
+                Bir Ömür Geçti Aldandım<br />
+                Gaflet Uykusuna Daldım<br />
+                Günahkar Şeytana kandım<br />
+                Merhamet Et Bize<br />
               </h4>
               <br />
               <Button
@@ -76,7 +73,7 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <ProductSection />
           <PortfolioSection />
-          <PricingSection />
+          <PricingSection Scroll={Scroll}/>
           <TeamSection />
           <WorkSection />
         </div>
