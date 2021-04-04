@@ -23,7 +23,7 @@ export default function ProductSection() {
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Biz Kimiz</h2>
           <h5 className={classes.description}>
-            Sadakat Mermer 2015 yılında abdullah ersan tarafından ısparta ilimizde kurulmuştur. Kuruluşundan 
+            Sanat Mermer 2021 yılında abdullah ersan tarafından ısparta ilimizde kurulmuştur. Kuruluşundan 
             bu yana başta mezarlıklar olmak üzere, mutfak mermerleri, bahçe çeşmeleri, hayratlar gibi her türlü
             mermer ihtiyaçlarına karşılık vermektedir. Civar şehir ve beldelerimize ve ücra köylere kadar halkımızın
             ihtiyaçları uğruna kuruluşundan bu yana hizmetine devam etmektedir. 
