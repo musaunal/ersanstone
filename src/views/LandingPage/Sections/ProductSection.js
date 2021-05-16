@@ -23,10 +23,24 @@ export default function ProductSection() {
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Biz Kimiz</h2>
           <h5 className={classes.description}>
-            Sanat Mermer 2021 yılında abdullah ersan tarafından ısparta ilimizde kurulmuştur. Kuruluşundan 
-            bu yana başta mezarlıklar olmak üzere, mutfak mermerleri, bahçe çeşmeleri, hayratlar gibi her türlü
-            mermer ihtiyaçlarına karşılık vermektedir. Civar şehir ve beldelerimize ve ücra köylere kadar halkımızın
-            ihtiyaçları uğruna kuruluşundan bu yana hizmetine devam etmektedir. 
+            Sanat mezar,
+            Ersan Grup İç ve Dış Tic. Sanayi, İnşaat, Endüstriyel Makine, Madencilik, Emlak, Otomotiv, Taşımacılık & Turizm Limited Şirketi
+            Firmasının inşaat sektörüne ait markalaşmış departmanıdır.
+          </h5>
+        </GridItem>
+        <GridItem xs={12} sm={12} md={8}>
+          <h2 className={classes.title}>Misyonumuz</h2>
+          <h5 className={classes.description}>
+            Danışan tüm müşterilerimizin sorunlarını dinleyerek, istekleri doğrultusunda doğru çözüme ulaşmaları noktasında
+            uzman olduğumuz alanlarda kendilerine rehberlik etmek, Türk Ekonomisine ve Türk İstihdamına katkı sağlamak,
+            doğru kalite-fiyat oranı sağlayarak geniş ürün yelpazesi ile tüketici beklentilerini en üst düzeyde karşılamak.
+          </h5>
+        </GridItem>
+        <GridItem xs={12} sm={12} md={8}>
+          <h2 className={classes.title}>Vizyonumuz</h2>
+          <h5 className={classes.description}>
+            Küresel Ekonomide dünya devi, Türk gururu ve sektörün öncüsü olmak, Türkiye'nin yanı sıra tüm dünyada
+            tüketicilerin sorunlarına çözüm sağlamak ve sürekli inovatif  kalmaktır.
           </h5>
         </GridItem>
       </GridContainer>
@@ -35,7 +49,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Kaliteli"
-              description="Yüzlerce çeşit mermer ve granit modelleri kaliteli malzemeler ve sağlam işçilik"
+              description="Sunduğumuz tüm ürünler, 1.sınıf A kalite ürünlerden ve tecrübeli uzman kadromuz tarafından haazırlanmaktadır."
               icon={Chat}
               iconColor="info"
               vertical
@@ -44,7 +58,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="2 yıl garantili"
-              description="Tüm ürünlerimizin Tadilatı tamiratı bakımı 2 yıl boyunca ücretsizdir"
+              description=""
               icon={VerifiedUser}
               iconColor="success"
               vertical
@@ -53,7 +67,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Çevre Dostu"
-              description="Mezarlarımızın temizliği itina ile yapılır. Üzerlerine çiçek dikimi ve suluma hizmetlerimiz vardır"
+              description="hizmet almış (şehir merkezinde) tüm müşrerilerimizin bakımları, ilk ay ücretsizdir."
               icon={Fingerprint}
               iconColor="primary"
               vertical
