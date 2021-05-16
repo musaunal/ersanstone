@@ -46,7 +46,7 @@ export default function ProductSection() {
       </GridContainer>
       <div>
         <GridContainer>
-          <GridItem xs={12} sm={12} md={4}>
+          <GridItem xs={12} sm={12} md={2}>
             <InfoArea
               title="Kaliteli"
               description="Sunduğumuz tüm ürünler, 1.sınıf A kalite ürünlerden ve tecrübeli uzman kadromuz tarafından hazırlanmaktadır."
@@ -55,7 +55,7 @@ export default function ProductSection() {
               vertical
             />
           </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
+          <GridItem xs={12} sm={12} md={2}>
             <InfoArea
               title="Garantili"
               description="Sunulan tüm ürünlerimizin oluşabilecek arıza ve tamiratı 5 yıl ücretsizdir."
@@ -66,28 +66,28 @@ export default function ProductSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="Çevre Dostu"
-              description="hizmet almış (şehir merkezinde) tüm müşrerilerimizin bakımları, ilk ay ücretsizdir."
-              icon={Fingerprint}
-              iconColor="primary"
-              vertical
-            />
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="Ödeme Kolaylığı"
-              description="kredi kartına 3 ay / elden 2 ay taksit imkanı."
-              icon={VerifiedUser}
-              iconColor="primary"
-              vertical
-            />
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
               title="%100 Memnuniyet"
               description="Memnuniyet sonrası ödeme imkanı"
               icon={Chat}
               iconColor="primary"
+              vertical
+            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={2}>
+            <InfoArea
+              title="Ödeme Kolaylığı"
+              description="kredi kartına 3 ay / elden 2 ay taksit imkanı."
+              icon={VerifiedUser}
+              iconColor="success"
+              vertical
+            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={2}>
+            <InfoArea
+              title="Çevre Dostu"
+              description="hizmet almış (şehir merkezinde) tüm müşrerilerimizin bakımları, ilk ay ücretsizdir."
+              icon={Fingerprint}
+              iconColor="info"
               vertical
             />
           </GridItem>
