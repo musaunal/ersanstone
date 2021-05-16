@@ -49,7 +49,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Kaliteli"
-              description="Sunduğumuz tüm ürünler, 1.sınıf A kalite ürünlerden ve tecrübeli uzman kadromuz tarafından haazırlanmaktadır."
+              description="Sunduğumuz tüm ürünler, 1.sınıf A kalite ürünlerden ve tecrübeli uzman kadromuz tarafından hazırlanmaktadır."
               icon={Chat}
               iconColor="info"
               vertical
@@ -57,8 +57,8 @@ export default function ProductSection() {
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
-              title="2 yıl garantili"
-              description=""
+              title="Garantili"
+              description="Sunulan tüm ürünlerimizin oluşabilecek arıza ve tamiratı 5 yıl ücretsizdir."
               icon={VerifiedUser}
               iconColor="success"
               vertical
@@ -69,6 +69,24 @@ export default function ProductSection() {
               title="Çevre Dostu"
               description="hizmet almış (şehir merkezinde) tüm müşrerilerimizin bakımları, ilk ay ücretsizdir."
               icon={Fingerprint}
+              iconColor="primary"
+              vertical
+            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <InfoArea
+              title="Ödeme Kolaylığı"
+              description="kredi kartına 3 ay / elden 2 ay taksit imkanı."
+              icon={VerifiedUser}
+              iconColor="primary"
+              vertical
+            />
+          </GridItem>
+          <GridItem xs={12} sm={12} md={4}>
+            <InfoArea
+              title="%100 Memnuniyet"
+              description="Memnuniyet sonrası ödeme imkanı"
+              icon={Chat}
               iconColor="primary"
               vertical
             />

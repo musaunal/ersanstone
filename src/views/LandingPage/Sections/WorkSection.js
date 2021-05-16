@@ -20,8 +20,6 @@ export default function WorkSection() {
         <GridItem cs={12} sm={12} md={8}>
           <h2 className={classes.title}>Bizimle İletişime Geç</h2>
           <h3 className={classes.description}>
-            Kredi kartına 3 ay / elden 2 ay taksit imkanı ile
-            Memnuniyet sonrası ödeme imkanı ile
             Fiyat öğrenme ve her türlü destek için bizi aramaktan çekinmeyin
             Her türlü ihtiyaclarınız ve siparişleriniz için lütfen bizimle iletişime geçin.
           </h3>
