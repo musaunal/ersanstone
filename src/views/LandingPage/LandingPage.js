@@ -73,7 +73,7 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <ProductSection />
           <PortfolioSection />
-          <PricingSection Scroll={Scroll}/>
+          {/* <PricingSection Scroll={Scroll}/> */}
           <TeamSection />
           <WorkSection />
         </div>
