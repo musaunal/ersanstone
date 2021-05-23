@@ -34,7 +34,7 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Sanat Mermer"
+        brand="Sanat Mezar"
         rightLinks={<HeaderLinks Scroll={Scroll} />}
         fixed
         changeColorOnScroll={{
@@ -47,13 +47,13 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={6} md={12}>
-              <h1 className={classes.title}>Her Nefis Ölümü Tadacaktır</h1>
+              <h1 className={classes.title}>
+                Sanat Mezar <br /></h1>
               <h4>
-                Bir Ömür Geçti Aldandım<br />
-                Gaflet Uykusuna Daldım<br />
-                Günahkar Şeytana kandım<br />
-                Merhamet Et Bize<br />
+                Ölümün Ayırdığı Sevdiklerinize, <br />
+                Ölümsüz Eserler Sunalım
               </h4>
+
               <br />
               <Button
                 color="danger"

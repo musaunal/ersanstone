@@ -40,7 +40,7 @@ export default function HeaderLinks(props) {
           color="transparent"
           target="_blank"
           className={classes.navLink}
-        > Fiyatlar
+        > Neden Biz
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
@@ -51,7 +51,7 @@ export default function HeaderLinks(props) {
           color="transparent"
           target="_blank"
           className={classes.navLink}
-        > Geçmiş Çalışmalarımız
+        > Referanslarımız
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
@@ -62,7 +62,7 @@ export default function HeaderLinks(props) {
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            // href="https://twitter.com/CreativeTim?ref=creativetim"
+            href="https://twitter.com/SanatMezar"
             target="_blank"
             color="transparent"
             className={classes.navLink}
@@ -81,7 +81,7 @@ export default function HeaderLinks(props) {
           
           <Button
             color="transparent"
-            // href="https://www.facebook.com/CreativeTim?ref=creativetim"
+            href="https://www.facebook.com/sanat.mezar/"
             target="_blank"
             className={classes.navLink}
           >
@@ -98,7 +98,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            // href="https://www.instagram.com/CreativeTimOfficial?ref=creativetim"
+            href="https://www.instagram.com/sanat_mezar/"
             target="_blank"
             className={classes.navLink}
           >
