@@ -5,6 +5,7 @@
   "private": true,
   "main": "src/index.js",
   "dependencies": {
+    "@hirohe/react-watermark": "^0.2.0",
     "@material-ui/core": "4.10.0",
     "@material-ui/icons": "4.9.1",
     "classnames": "2.2.6",

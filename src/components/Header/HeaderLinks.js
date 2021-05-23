@@ -8,6 +8,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import Tooltip from "@material-ui/core/Tooltip";
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
 
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
@@ -55,6 +56,35 @@ export default function HeaderLinks(props) {
         </Button>
       </ListItem>
       <ListItem className={classes.listItem}>
+        <a
+          // onClick={() => {
+          //   props.Scroll.animateScroll.scrollTo()
+          // }}
+          href="#contact"
+          color="transparent"
+          target="_blank"
+          className={classes.navLink}
+        > İletişim
+        </a>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Tooltip
+          id="instagram-twitter"
+          title="Bizi twitterda takip et"
+          placement={window.innerWidth > 959 ? "top" : "left"}
+          classes={{ tooltip: classes.tooltip }}
+        >
+          <Button
+            href="https://twitter.com/SanatMezar"
+            target="_blank"
+            color="transparent"
+            className={classes.navLink}
+          >
+            <WhatsAppIcon fontSize="large"/>
+          </Button>
+        </Tooltip>
+      </ListItem>
+      <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-twitter"
           title="Bizi twitterda takip et"
@@ -78,7 +108,6 @@ export default function HeaderLinks(props) {
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
-          
           <Button
             color="transparent"
             href="https://www.facebook.com/sanat.mezar/"

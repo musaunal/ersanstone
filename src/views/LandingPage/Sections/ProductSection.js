@@ -45,6 +45,7 @@ export default function ProductSection() {
         </GridItem>
       </GridContainer>
       <div>
+        <h2 className={classes.title}>Neden Biz</h2>
         <GridContainer>
           <GridItem xs={12} sm={12} md={2}>
             <InfoArea

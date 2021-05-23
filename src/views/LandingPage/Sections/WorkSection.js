@@ -15,24 +15,24 @@ const useStyles = makeStyles(styles);
 export default function WorkSection() {
   const classes = useStyles();
   return (
-    <div className={classes.section}>
+    <div id="contact" className={classes.section}>
       <GridContainer justify="center">
         <GridItem cs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Bizimle İletişime Geç</h2>
+          <h2 className={classes.title}>Bizimle İletişime Geçin</h2>
           <h3 className={classes.description}>
             Fiyat öğrenme ve her türlü destek için bizi aramaktan çekinmeyin
             Her türlü ihtiyaclarınız ve siparişleriniz için lütfen bizimle iletişime geçin.
           </h3>
           <GridContainer>
             <GridItem xs={12}>
-              <h3 className={classes.description}>GSM: 0 544 545 3208</h3>
+              <h3 className={classes.description}>Whatsap: 0 544 545 3208</h3>
             </GridItem>
-            <GridItem xs={12}>
+            {/* <GridItem xs={12}>
               <h3 className={classes.description}>Telefon: 0 246 223 48 84</h3>
             </GridItem>
             <GridItem xs={12}>
-              <h3 className={classes.description}>Yeni Sanayi sitesi 15 Blok No: 24</h3>
-            </GridItem>
+              <h3 className={classes.description}>Yeni Sanayi sitesi 15 Blok No: 24</h3> */}
+            {/* </GridItem> */}
           </GridContainer>
         </GridItem>
       </GridContainer>

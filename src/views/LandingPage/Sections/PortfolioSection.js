@@ -42,7 +42,7 @@ export default function PortfolioSection(props) {
     <div >
       <GridContainer>
         <GridItem >
-          <h2 className={classes.title}>Geçmiş Çalışmalarımız</h2>
+          <h2 className={classes.title}>Referanslarımız</h2>
         </GridItem>
       </GridContainer>
 
@@ -58,28 +58,60 @@ export default function PortfolioSection(props) {
                 tabContent: (
                   <GridContainer justify="center">
                     <GridItem xs={12} sm={12} md={4}>
-                      <img
-                        alt="..."
-                        src={studio1}
-                        className={navImageClasses}
-                      />
-                      <img
-                        alt="..."
-                        src={studio2}
-                        className={navImageClasses}
-                      />
+                      <img alt="..." src={studio1} className={navImageClasses} />
+                      <img alt="..." src={studio2} className={navImageClasses} />
                     </GridItem>
                     <GridItem xs={12} sm={12} md={4}>
-                      <img
-                        alt="..."
-                        src={studio5}
-                        className={navImageClasses}
-                      />
-                      <img
-                        alt="..."
-                        src={studio4}
-                        className={navImageClasses}
-                      />
+                      <img alt="..." src={studio1} className={navImageClasses} />
+                      <img alt="..." src={studio2} className={navImageClasses} />
+                    </GridItem>
+                  </GridContainer>
+                )
+              },
+              {
+                tabButton: "Mezarlar",
+                tabIcon: Camera,
+                tabContent: (
+                  <GridContainer justify="center">
+                    <GridItem xs={12} sm={12} md={4}>
+                      <img alt="..." src={studio1} className={navImageClasses} />
+                      <img alt="..." src={studio2} className={navImageClasses} />
+                    </GridItem>
+                    <GridItem xs={12} sm={12} md={4}>
+                      <img alt="..." src={studio1} className={navImageClasses} />
+                      <img alt="..." src={studio2} className={navImageClasses} />
+                    </GridItem>
+                  </GridContainer>
+                )
+              },
+              {
+                tabButton: "Mezarlar",
+                tabIcon: Camera,
+                tabContent: (
+                  <GridContainer justify="center">
+                    <GridItem xs={12} sm={12} md={4}>
+                      <img alt="..." src={studio1} className={navImageClasses} />
+                      <img alt="..." src={studio2} className={navImageClasses} />
+                    </GridItem>
+                    <GridItem xs={12} sm={12} md={4}>
+                      <img alt="..." src={studio1} className={navImageClasses} />
+                      <img alt="..." src={studio2} className={navImageClasses} />
+                    </GridItem>
+                  </GridContainer>
+                )
+              },
+              {
+                tabButton: "Mezarlar",
+                tabIcon: Camera,
+                tabContent: (
+                  <GridContainer justify="center">
+                    <GridItem xs={12} sm={12} md={4}>
+                      <img alt="..." src={studio1} className={navImageClasses} />
+                      <img alt="..." src={studio2} className={navImageClasses} />
+                    </GridItem>
+                    <GridItem xs={12} sm={12} md={4}>
+                      <img alt="..." src={studio1} className={navImageClasses} />
+                      <img alt="..." src={studio2} className={navImageClasses} />
                     </GridItem>
                   </GridContainer>
                 )
