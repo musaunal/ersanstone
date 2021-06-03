@@ -71,12 +71,12 @@ export default function PortfolioSection(props) {
                 tabButton: "Mezarlar", tabIcon: Camera, tabContent: (
                   <GridContainer justify="center">
                     <GridItem xs={12} sm={12} md={4}>
-                      <img alt="..." src={work1} className={navImageClasses} />
-                      <img alt="..." src={work2} className={navImageClasses} />
+                      <img alt="..." src={work11} className={navImageClasses} />
+                      <img alt="..." src={work12} className={navImageClasses} />
                     </GridItem>
                     <GridItem xs={12} sm={12} md={4}>
-                      <img alt="..." src={work3} className={navImageClasses} />
-                      <img alt="..." src={work4} className={navImageClasses} />
+                      <img alt="..." src={work16} className={navImageClasses} />
+                      <img alt="..." src={work14} className={navImageClasses} />
                     </GridItem>
                   </GridContainer>
                 )
@@ -103,8 +103,8 @@ export default function PortfolioSection(props) {
                       <img alt="..." src={work10} className={navImageClasses} />
                     </GridItem>
                     <GridItem xs={12} sm={12} md={4}>
-                      <img alt="..." src={work11} className={navImageClasses} />
-                      <img alt="..." src={work12} className={navImageClasses} />
+                      <img alt="..." src={work1} className={navImageClasses} />
+                      <img alt="..." src={work2} className={navImageClasses} />
                     </GridItem>
                   </GridContainer>
                 )
@@ -114,11 +114,11 @@ export default function PortfolioSection(props) {
                   <GridContainer justify="center">
                     <GridItem xs={12} sm={12} md={4}>
                       <img alt="..." src={work13} className={navImageClasses} />
-                      <img alt="..." src={work14} className={navImageClasses} />
+                      <img alt="..." src={work4} className={navImageClasses} />
                     </GridItem>
                     <GridItem xs={12} sm={12} md={4}>
                       <img alt="..." src={work15} className={navImageClasses} />
-                      <img alt="..." src={work16} className={navImageClasses} />
+                      <img alt="..." src={work3} className={navImageClasses} />
                     </GridItem>
                   </GridContainer>
                 )
