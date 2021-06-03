@@ -48,16 +48,10 @@ const useStyles = makeStyles(styles);
 
 export default function PortfolioSection(props) {
   const classes = useStyles();
-  const { ...rest } = props;
-  const imageClasses = classNames(
-    classes.imgRaised,
-    classes.imgRoundedCircle,
-    classes.imgFluid
-  );
   const navImageClasses = classNames(classes.imgRounded, classes.imgGallery);
   return (
     // className={classNames(classes.main, classes.mainRaised)}
-    <div >
+    <div id="references">
       <GridContainer>
         <GridItem >
           <h2 className={classes.title}>Referanslarımız</h2>

@@ -1,7 +1,7 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import classNames from "classnames";
 import { makeStyles } from "@material-ui/core/styles";
-import * as Scroll from 'react-scroll';
+// import * as Scroll from 'react-scroll';
 
 // core components
 import Header from "components/Header/Header.js";
@@ -16,10 +16,10 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
 import ProductSection from "./Sections/ProductSection.js";
-import TeamSection from "./Sections/TeamSection.js";
+// import TeamSection from "./Sections/TeamSection.js";
 import WorkSection from "./Sections/WorkSection.js";
 import PortfolioSection from "views/LandingPage/Sections/PortfolioSection";
-import PricingSection from "views/LandingPage/Sections/PricingSection";
+// import PricingSection from "views/LandingPage/Sections/PricingSection";
 
 
 const dashboardRoutes = [];
@@ -30,18 +30,19 @@ export default function LandingPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
   return (
-    <div>
+    <div id="home">
       <Header
         color="transparent"
         routes={dashboardRoutes}
         brand="Sanat Mezar"
-        rightLinks={<HeaderLinks Scroll={Scroll} />}
+        rightLinks={<HeaderLinks/>}
         fixed
         changeColorOnScroll={{
           height: 400,
           color: "white"
         }}
         {...rest}
+        href="#home"
       />
       <Parallax filter image={require("assets/img/mezarlık1.jpg")}>
         <div className={classes.container}>

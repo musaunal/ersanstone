@@ -18,7 +18,7 @@ const useStyles = makeStyles(styles);
 export default function ProductSection() {
   const classes = useStyles();
   return (
-    <div className={classes.section}>
+    <div id="whoweare" className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Biz Kimiz</h2>
@@ -29,7 +29,7 @@ export default function ProductSection() {
           </h5>
         </GridItem>
         <GridItem xs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Misyonumuz</h2>
+          <h2 id="mission" className={classes.title}>Misyonumuz</h2>
           <h5 className={classes.description}>
             Danışan tüm müşterilerimizin sorunlarını dinleyerek, istekleri doğrultusunda doğru çözüme ulaşmaları noktasında
             uzman olduğumuz alanlarda kendilerine rehberlik etmek, Türk Ekonomisine ve Türk İstihdamına katkı sağlamak,

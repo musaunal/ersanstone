@@ -23,46 +23,33 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <Button
-          onClick={() => {
-            props.Scroll.animateScroll.scrollTo(600)
-          }}
+        <a
+          href="#whoweare"
           color="transparent"
-          target="_blank"
           className={classes.navLink}
         > Biz Kimiz
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          onClick={() => {
-            props.Scroll.animateScroll.scrollTo(2150)
-          }}
-          color="transparent"
-          target="_blank"
-          className={classes.navLink}
-        > Neden Biz
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          onClick={() => {
-            props.Scroll.animateScroll.scrollTo(1150)
-          }}
-          color="transparent"
-          target="_blank"
-          className={classes.navLink}
-        > Referanslarımız
-        </Button>
+        </a>
       </ListItem>
       <ListItem className={classes.listItem}>
         <a
-          // onClick={() => {
-          //   props.Scroll.animateScroll.scrollTo()
-          // }}
+          href="#mission"
+          color="transparent"
+          className={classes.navLink}
+        > Neden Biz
+        </a>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <a
+          href="#references"
+          color="transparent"
+          className={classes.navLink}
+        > Referanslarımız
+        </a>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <a
           href="#contact"
           color="transparent"
-          target="_blank"
           className={classes.navLink}
         > İletişim
         </a>
@@ -70,12 +57,12 @@ export default function HeaderLinks(props) {
       <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-twitter"
-          title="Bizi twitterda takip et"
+          title="Whatsapp ile iletişime geç"
           placement={window.innerWidth > 959 ? "top" : "left"}
           classes={{ tooltip: classes.tooltip }}
         >
           <Button
-            href="https://twitter.com/SanatMezar"
+            href="https://api.whatsapp.com/send?phone=905445453208"
             target="_blank"
             color="transparent"
             className={classes.navLink}
@@ -127,7 +114,7 @@ export default function HeaderLinks(props) {
         >
           <Button
             color="transparent"
-            href="https://www.instagram.com/sanat_mezar/"
+            href="https://www.instagram.com/sanat.mezar/"
             target="_blank"
             className={classes.navLink}
           >
