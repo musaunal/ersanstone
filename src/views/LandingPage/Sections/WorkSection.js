@@ -25,7 +25,8 @@ export default function WorkSection() {
           </h3>
           <GridContainer>
             <GridItem xs={12}>
-              <h3 className={classes.description}>Whatsap: 0 544 545 3208</h3>
+              <h3 className={classes.description}>Whatsap: 0 544 545 32 08</h3>
+              <h3 className={classes.description}>GSM    : 0 544 545 32 08</h3>
             </GridItem>
             {/* <GridItem xs={12}>
               <h3 className={classes.description}>Telefon: 0 246 223 48 84</h3>
