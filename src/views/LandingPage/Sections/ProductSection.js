@@ -23,9 +23,12 @@ export default function ProductSection() {
         <GridItem xs={12} sm={12} md={8}>
           <h2 className={classes.title}>Biz Kimiz</h2>
           <h5 className={classes.description}>
-            Sanat mezar,
-            Ersan Grup İç ve Dış Tic. Sanayi, İnşaat, Endüstriyel Makine, Madencilik, Emlak, Otomotiv, Taşımacılık & Turizm Limited Şirketi
-            Firmasının inşaat sektörüne ait markalaşmış departmanıdır.
+            Ersan Stone,
+            Ersan Stone İç ve Dış Tic. Sanayi, İnşaat, Endüstriyel Makine, Madencilik, Emlak, Otomotiv, Taşımacılık & Turizm Limited Şirketi
+            2021 yılında kurulmuştur. Kuruluş irtibatı ile "Ersan Stone" marka tescilliği ünvanını almıştır. Mermer, granit, traverter,
+            onyx, andezit, bazalt ve doğal taş üretimi ile mermerit ve çimstone gibi sunu taşları üretimi yapmaktadır.<br></br>
+
+            Ersan Stone Markası; Mezar, Çeşme, Şömine, Merdiven, Mutfak, Banyo ve Pencere alanlarında profesyonel hizmetler sunmaktadır.
           </h5>
         </GridItem>
         <GridItem xs={12} sm={12} md={8}>
