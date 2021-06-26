@@ -12,6 +12,7 @@ import Collections from "@material-ui/icons/Collections";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import NavPills from "components/NavPills/NavPills.js";
+import ModalImage from "react-modal-image";
 
 import work1 from "assets/img/mezarlar/r1.jpg";
 import work2 from "assets/img/mezarlar/r2.jpg";
@@ -69,7 +70,7 @@ export default function PortfolioSection(props) {
                 tabButton: "Mezar", tabIcon: Collections, tabContent: (
                   <GridContainer justify="center">
                     <GridItem xs={6} sm={6} md={2}>
-                      <img alt="..." src={work2} className={navImageClasses} />
+                      <ModalImage alt="..." small={work2} large={work2} medium={work2} className={navImageClasses} />
                       <img alt="..." src={work10} className={navImageClasses} />
                       <img alt="..." src={work15} className={navImageClasses} />
                       <img alt="..." src={work16} className={navImageClasses} />
