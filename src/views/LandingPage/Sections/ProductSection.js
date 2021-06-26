@@ -26,7 +26,9 @@ export default function ProductSection() {
             Ersan Stone,
             Ersan Stone İç ve Dış Tic. Sanayi, İnşaat, Endüstriyel Makine, Madencilik, Emlak, Otomotiv, Taşımacılık & Turizm Limited Şirketi
             2021 yılında kurulmuştur. Kuruluş irtibatı ile "Ersan Stone" marka tescilliği ünvanını almıştır. Mermer, granit, traverter,
-            onyx, andezit, bazalt ve doğal taş üretimi ile mermerit ve çimstone gibi sunu taşları üretimi yapmaktadır.<br></br>
+            onyx, andezit, bazalt ve doğal taş üretimi ile mermerit ve çimstone gibi sunu taşları üretimi yapmaktadır.
+            <br></br>
+            <br></br>
 
             Ersan Stone Markası; Mezar, Çeşme, Şömine, Merdiven, Mutfak, Banyo ve Pencere alanlarında profesyonel hizmetler sunmaktadır.
           </h5>

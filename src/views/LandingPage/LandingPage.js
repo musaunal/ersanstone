@@ -34,7 +34,7 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Sanat Mezar"
+        brand="Ersan Stone"
         rightLinks={<HeaderLinks/>}
         fixed
         changeColorOnScroll={{
@@ -49,7 +49,7 @@ export default function LandingPage(props) {
           <GridContainer>
             <GridItem xs={12} sm={6} md={12}>
               <h1 className={classes.title}>
-                Sanat Mezar <br /></h1>
+                Ersan Stone <br /></h1>
               <h4>
                 Ölümün Ayırdığı Sevdiklerinize, <br />
                 Ölümsüz Eserler Sunalım
