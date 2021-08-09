@@ -13,6 +13,7 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import NavPills from "components/NavPills/NavPills.js";
 import ModalImage from "react-modal-image";
+import { SRLWrapper } from "simple-react-lightbox";
 
 import work1 from "assets/img/mezarlar/r1.jpg";
 import work2 from "assets/img/mezarlar/r2.jpg";
@@ -95,165 +96,167 @@ export default function PortfolioSection(props) {
 
       <GridContainer justify="center">
         <GridItem xs={10} className={classes.navWrapper}>
-          <NavPills alignCenter color="primary" tabs={[
-            {
-              tabButton: "Mezar", tabIcon: Collections, tabContent: (
-                <GridContainer justify="center">
-                  <GridItem xs={6} sm={6} md={2}>
-                    <img alt="..." src={work2} className={navImageClasses} />
-                    <img alt="..." src={work10} className={navImageClasses} />
-                    <img alt="..." src={work14} className={navImageClasses} />
-                    <img alt="..." src={work29} className={navImageClasses} />
-                    <img alt="..." src={work15} className={navImageClasses} />
-                    <img alt="..." src={work20} className={navImageClasses} />
-                    <img alt="..." src={work28} className={navImageClasses} />
-                  </GridItem>
-                  <GridItem xs={6} sm={6} md={2}>
-                    <img alt="..." src={work1} className={navImageClasses} />
-                    <img alt="..." src={work12} className={navImageClasses} />
-                    <img alt="..." src={work13} className={navImageClasses} />
-                    <img alt="..." src={work30} className={navImageClasses} />
-                    <img alt="..." src={work16} className={navImageClasses} />
-                    <img alt="..." src={work19} className={navImageClasses} />
-                    <img alt="..." src={work32} className={navImageClasses} />
-                  </GridItem>
-                  <GridItem xs={6} sm={6} md={2}>
-                    <img alt="..." src={work8} className={navImageClasses} />
-                    <img alt="..." src={work22} className={navImageClasses} />
-                    <img alt="..." src={work24} className={navImageClasses} />
-                    <img alt="..." src={work18} className={navImageClasses} />
-                    <img alt="..." src={work3} className={navImageClasses} />
-                    <img alt="..." src={work7} className={navImageClasses} />
-                    <img alt="..." src={work21} className={navImageClasses} />
-                  </GridItem>
-                  <GridItem xs={6} sm={6} md={2}>
-                    <img alt="..." src={work9} className={navImageClasses} />
-                    <img alt="..." src={work6} className={navImageClasses} />
-                    <img alt="..." src={work31} className={navImageClasses} />
-                    <img alt="..." src={work17} className={navImageClasses} />
-                    <img alt="..." src={work4} className={navImageClasses} />
-                    <img alt="..." src={work5} className={navImageClasses} />
-                    <img alt="..." src={work25} className={navImageClasses} />
-                  </GridItem>
-                </GridContainer>
-              )
-            },
-            {
-              tabButton: "Çeşme", tabIcon: Collections, tabContent: (
-                <GridContainer justify="center">
-                  <GridItem xs={12} sm={12} md={4}>
-                  </GridItem>
-                  <GridItem xs={12} sm={12} md={4}>
-                  </GridItem>
-                </GridContainer>
-              )
-            },
-            {
-              tabButton: "Mutfak", tabIcon: Collections, tabContent: (
-                <GridContainer justify="center">
-                  <GridItem xs={12} sm={12} md={4}>
-                    <img alt="..." src={mu1} className={navImageClasses} />
-                    <img alt="..." src={mu2} className={navImageClasses} />
-                    <img alt="..." src={mu3} className={navImageClasses} />
-                    <img alt="..." src={mu4} className={navImageClasses} />
-                    <img alt="..." src={mu5} className={navImageClasses} />
-                    <img alt="..." src={mu6} className={navImageClasses} />
-                    <img alt="..." src={mu7} className={navImageClasses} />
-                  </GridItem>
-                  <GridItem xs={12} sm={12} md={4}>
-                    <img alt="..." src={mu9} className={navImageClasses} />
-                    <img alt="..." src={mu8} className={navImageClasses} />
-                    <img alt="..." src={mu10} className={navImageClasses} />
-                    <img alt="..." src={mu11} className={navImageClasses} />
-                    <img alt="..." src={mu12} className={navImageClasses} />
-                    <img alt="..." src={mu13} className={navImageClasses} />
-                  </GridItem>
-                </GridContainer>
-              )
-            },
-            {
-              tabButton: "Banyo", tabIcon: Collections, tabContent: (
-                <GridContainer justify="center">
-                  <GridItem xs={12} sm={12} md={4}>
-                    <img alt="..." src={b1} className={navImageClasses} />
-                    <img alt="..." src={b2} className={navImageClasses} />
-                  </GridItem>
-                </GridContainer>
-              )
-            },
-            {
-              tabButton: "Hamam", tabIcon: Collections, tabContent: (
-                <GridContainer justify="center">
-                  <GridItem xs={12} sm={12} md={4}>
-                    <img alt="..." src={h1} className={navImageClasses} />
-                    <img alt="..." src={h2} className={navImageClasses} />
-                  </GridItem>
-                  {/* <GridItem xs={12} sm={12} md={4}>
+          <SRLWrapper>
+            <NavPills alignCenter color="primary" tabs={[
+              {
+                tabButton: "Mezar", tabIcon: Collections, tabContent: (
+                  <GridContainer justify="center">
+                    <GridItem xs={6} sm={6} md={2}>
+                      <img alt="..." src={work2} className={navImageClasses} />
+                      <img alt="..." src={work10} className={navImageClasses} />
+                      <img alt="..." src={work14} className={navImageClasses} />
+                      <img alt="..." src={work29} className={navImageClasses} />
+                      <img alt="..." src={work15} className={navImageClasses} />
+                      <img alt="..." src={work20} className={navImageClasses} />
+                      <img alt="..." src={work28} className={navImageClasses} />
+                    </GridItem>
+                    <GridItem xs={6} sm={6} md={2}>
+                      <img alt="..." src={work1} className={navImageClasses} />
+                      <img alt="..." src={work12} className={navImageClasses} />
+                      <img alt="..." src={work13} className={navImageClasses} />
+                      <img alt="..." src={work30} className={navImageClasses} />
+                      <img alt="..." src={work16} className={navImageClasses} />
+                      <img alt="..." src={work19} className={navImageClasses} />
+                      <img alt="..." src={work32} className={navImageClasses} />
+                    </GridItem>
+                    <GridItem xs={6} sm={6} md={2}>
+                      <img alt="..." src={work8} className={navImageClasses} />
+                      <img alt="..." src={work22} className={navImageClasses} />
+                      <img alt="..." src={work24} className={navImageClasses} />
+                      <img alt="..." src={work18} className={navImageClasses} />
+                      <img alt="..." src={work3} className={navImageClasses} />
+                      <img alt="..." src={work7} className={navImageClasses} />
+                      <img alt="..." src={work21} className={navImageClasses} />
+                    </GridItem>
+                    <GridItem xs={6} sm={6} md={2}>
+                      <img alt="..." src={work9} className={navImageClasses} />
+                      <img alt="..." src={work6} className={navImageClasses} />
+                      <img alt="..." src={work31} className={navImageClasses} />
+                      <img alt="..." src={work17} className={navImageClasses} />
+                      <img alt="..." src={work4} className={navImageClasses} />
+                      <img alt="..." src={work5} className={navImageClasses} />
+                      <img alt="..." src={work25} className={navImageClasses} />
+                    </GridItem>
+                  </GridContainer>
+                )
+              },
+              {
+                tabButton: "Çeşme", tabIcon: Collections, tabContent: (
+                  <GridContainer justify="center">
+                    <GridItem xs={12} sm={12} md={4}>
+                    </GridItem>
+                    <GridItem xs={12} sm={12} md={4}>
+                    </GridItem>
+                  </GridContainer>
+                )
+              },
+              {
+                tabButton: "Mutfak", tabIcon: Collections, tabContent: (
+                  <GridContainer justify="center">
+                    <GridItem xs={12} sm={12} md={4}>
+                      <img alt="..." src={mu1} className={navImageClasses} />
+                      <img alt="..." src={mu2} className={navImageClasses} />
+                      <img alt="..." src={mu3} className={navImageClasses} />
+                      <img alt="..." src={mu4} className={navImageClasses} />
+                      <img alt="..." src={mu5} className={navImageClasses} />
+                      <img alt="..." src={mu6} className={navImageClasses} />
+                      <img alt="..." src={mu7} className={navImageClasses} />
+                    </GridItem>
+                    <GridItem xs={12} sm={12} md={4}>
+                      <img alt="..." src={mu9} className={navImageClasses} />
+                      <img alt="..." src={mu8} className={navImageClasses} />
+                      <img alt="..." src={mu10} className={navImageClasses} />
+                      <img alt="..." src={mu11} className={navImageClasses} />
+                      <img alt="..." src={mu12} className={navImageClasses} />
+                      <img alt="..." src={mu13} className={navImageClasses} />
+                    </GridItem>
+                  </GridContainer>
+                )
+              },
+              {
+                tabButton: "Banyo", tabIcon: Collections, tabContent: (
+                  <GridContainer justify="center">
+                    <GridItem xs={12} sm={12} md={4}>
+                      <img alt="..." src={b1} className={navImageClasses} />
+                      <img alt="..." src={b2} className={navImageClasses} />
+                    </GridItem>
+                  </GridContainer>
+                )
+              },
+              {
+                tabButton: "Hamam", tabIcon: Collections, tabContent: (
+                  <GridContainer justify="center">
+                    <GridItem xs={12} sm={12} md={4}>
+                      <img alt="..." src={h1} className={navImageClasses} />
+                      <img alt="..." src={h2} className={navImageClasses} />
+                    </GridItem>
+                    {/* <GridItem xs={12} sm={12} md={4}>
                   </GridItem> */}
-                </GridContainer>
-              )
-            },
-            {
-              tabButton: "Merdiven", tabIcon: Collections, tabContent: (
-                <GridContainer justify="center">
-                  <GridItem xs={12} sm={12} md={4}>
-                    <img alt="..." src={m1} className={navImageClasses} />
-                    <img alt="..." src={m2} className={navImageClasses} />
-                  </GridItem>
-                  <GridItem xs={12} sm={12} md={4}>
-                    <img alt="..." src={m3} className={navImageClasses} />
-                    <img alt="..." src={m4} className={navImageClasses} />
-                  </GridItem>
-                </GridContainer>
-              )
-            },
-            {
-              tabButton: "Pencere", tabIcon: Collections, tabContent: (
-                <GridContainer justify="center">
-                  <GridItem xs={12} sm={12} md={4}>
-                  </GridItem>
-                  <GridItem xs={12} sm={12} md={4}>
-                  </GridItem>
-                </GridContainer>
-              )
-            },
-            {
-              tabButton: "Balkon", tabIcon: Collections, tabContent: (
-                <GridContainer justify="center">
-                  <GridItem xs={12} sm={12} md={4}>
-                    <img alt="..." src={bl1} className={navImageClasses} />
-                    <img alt="..." src={bl2} className={navImageClasses} />
-                    <img alt="..." src={bl3} className={navImageClasses} />
-                  </GridItem>
-                  <GridItem xs={12} sm={12} md={4}>
-                    <img alt="..." src={bl4} className={navImageClasses} />
-                    <img alt="..." src={bl5} className={navImageClasses} />
-                  </GridItem>
-                </GridContainer>
-              )
-            },
-            {
-              tabButton: "Şömine", tabIcon: Collections, tabContent: (
-                <GridContainer justify="center">
-                  <GridItem xs={12} sm={12} md={4}>
-                  </GridItem>
-                  <GridItem xs={12} sm={12} md={4}>
-                  </GridItem>
-                </GridContainer>
-              )
-            },
-            {
-              tabButton: "Dekoratif", tabIcon: Collections, tabContent: (
-                <GridContainer justify="center">
-                  <GridItem xs={12} sm={12} md={4}>
-                  </GridItem>
-                  <GridItem xs={12} sm={12} md={4}>
-                  </GridItem>
-                </GridContainer>
-              )
-            }
-          ]}
-          />
+                  </GridContainer>
+                )
+              },
+              {
+                tabButton: "Merdiven", tabIcon: Collections, tabContent: (
+                  <GridContainer justify="center">
+                    <GridItem xs={12} sm={12} md={4}>
+                      <img alt="..." src={m1} className={navImageClasses} />
+                      <img alt="..." src={m2} className={navImageClasses} />
+                    </GridItem>
+                    <GridItem xs={12} sm={12} md={4}>
+                      <img alt="..." src={m3} className={navImageClasses} />
+                      <img alt="..." src={m4} className={navImageClasses} />
+                    </GridItem>
+                  </GridContainer>
+                )
+              },
+              {
+                tabButton: "Pencere", tabIcon: Collections, tabContent: (
+                  <GridContainer justify="center">
+                    <GridItem xs={12} sm={12} md={4}>
+                    </GridItem>
+                    <GridItem xs={12} sm={12} md={4}>
+                    </GridItem>
+                  </GridContainer>
+                )
+              },
+              {
+                tabButton: "Balkon", tabIcon: Collections, tabContent: (
+                  <GridContainer justify="center">
+                    <GridItem xs={12} sm={12} md={4}>
+                      <img alt="..." src={bl1} className={navImageClasses} />
+                      <img alt="..." src={bl2} className={navImageClasses} />
+                      <img alt="..." src={bl3} className={navImageClasses} />
+                    </GridItem>
+                    <GridItem xs={12} sm={12} md={4}>
+                      <img alt="..." src={bl4} className={navImageClasses} />
+                      <img alt="..." src={bl5} className={navImageClasses} />
+                    </GridItem>
+                  </GridContainer>
+                )
+              },
+              {
+                tabButton: "Şömine", tabIcon: Collections, tabContent: (
+                  <GridContainer justify="center">
+                    <GridItem xs={12} sm={12} md={4}>
+                    </GridItem>
+                    <GridItem xs={12} sm={12} md={4}>
+                    </GridItem>
+                  </GridContainer>
+                )
+              },
+              {
+                tabButton: "Dekoratif", tabIcon: Collections, tabContent: (
+                  <GridContainer justify="center">
+                    <GridItem xs={12} sm={12} md={4}>
+                    </GridItem>
+                    <GridItem xs={12} sm={12} md={4}>
+                    </GridItem>
+                  </GridContainer>
+                )
+              }
+            ]}
+            />
+          </SRLWrapper>
         </GridItem>
       </GridContainer>
     </div>
