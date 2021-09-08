@@ -25,7 +25,7 @@ import work7 from "assets/img/mezarlar/r7.jpg";
 import work8 from "assets/img/mezarlar/r8.jpg";
 import work9 from "assets/img/mezarlar/r9.jpg";
 import work10 from "assets/img/mezarlar/r10.jpg";
-// import work11 from "assets/img/mezarlar/r11.jpg";
+import work11 from "assets/img/mezarlar/r11.jpg";
 import work12 from "assets/img/mezarlar/r12.jpg";
 import work13 from "assets/img/mezarlar/r13.jpg";
 import work14 from "assets/img/mezarlar/r14.jpg";
@@ -37,7 +37,7 @@ import work19 from "assets/img/mezarlar/r19.jpg";
 import work20 from "assets/img/mezarlar/r20.jpg";
 import work21 from "assets/img/mezarlar/r21.jpg";
 import work22 from "assets/img/mezarlar/r22.jpg";
-// import work23 from "assets/img/mezarlar/r23.jpg";
+import work23 from "assets/img/mezarlar/r23.jpg";
 import work24 from "assets/img/mezarlar/r24.jpg";
 import work25 from "assets/img/mezarlar/r25.jpg";
 // import work26 from "assets/img/mezarlar/r26.jpg";
@@ -120,6 +120,7 @@ export default function PortfolioSection(props) {
                       <img alt="..." src={work32} className={navImageClasses} />
                     </GridItem>
                     <GridItem xs={6} sm={6} md={2}>
+                      <img alt="..." src={work11} className={navImageClasses} />
                       <img alt="..." src={work8} className={navImageClasses} />
                       <img alt="..." src={work22} className={navImageClasses} />
                       <img alt="..." src={work24} className={navImageClasses} />
@@ -129,6 +130,7 @@ export default function PortfolioSection(props) {
                       <img alt="..." src={work21} className={navImageClasses} />
                     </GridItem>
                     <GridItem xs={6} sm={6} md={2}>
+                      <img alt="..." src={work23} className={navImageClasses} />
                       <img alt="..." src={work9} className={navImageClasses} />
                       <img alt="..." src={work6} className={navImageClasses} />
                       <img alt="..." src={work31} className={navImageClasses} />
