@@ -1,7 +1,7 @@
 /*eslint-disable*/
-import React from "react";
+import React, { useEffect } from "react";
 // react components for routing our app without refresh
-import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
@@ -24,33 +24,53 @@ export default function HeaderLinks(props) {
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
         <a
-          href="#whoweare"
+          // to="#whoweare"
           color="transparent"
           className={classes.navLink}
+          onClick={ () => {
+            document
+            .querySelector("#whoweare")
+            .scrollIntoView({ behavior: "smooth", block: "start" })
+          }}
         > Biz Kimiz
         </a>
       </ListItem>
       <ListItem className={classes.listItem}>
         <a
-          href="#mission"
+          // href="#mission"
           color="transparent"
           className={classes.navLink}
+          onClick={ () => {
+            document
+            .querySelector("#mission")
+            .scrollIntoView({ behavior: "smooth", block: "start" })
+          }}
         > Neden Biz
         </a>
       </ListItem>
       <ListItem className={classes.listItem}>
         <a
-          href="#references"
+          // href="#references"
           color="transparent"
           className={classes.navLink}
+          onClick={ () => {
+            document
+            .querySelector("#references")
+            .scrollIntoView({ behavior: "smooth", block: "start" })
+          }}
         > Referanslarımız
         </a>
       </ListItem>
       <ListItem className={classes.listItem}>
         <a
-          href="#contact"
+          // href="#contact"
           color="transparent"
           className={classes.navLink}
+          onClick={ () => {
+            document
+            .querySelector("#contact")
+            .scrollIntoView({ behavior: "smooth", block: "start" })
+          }}
         > İletişim
         </a>
       </ListItem>
@@ -67,7 +87,7 @@ export default function HeaderLinks(props) {
             color="transparent"
             className={classes.navLink}
           >
-            <WhatsAppIcon fontSize="large"/>
+            <WhatsAppIcon fontSize="large" />
           </Button>
         </Tooltip>
       </ListItem>

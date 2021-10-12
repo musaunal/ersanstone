@@ -55,7 +55,7 @@ export default function LandingPage(props) {
                 Ölümsüz Eserler Sunalım
               </h4>
 
-              <br />
+              {/* <br />
               <Button
                 color="danger"
                 size="lg"
@@ -65,7 +65,7 @@ export default function LandingPage(props) {
               >
                 <i className="fas fa-play" />
                 Tanıtım Videosu
-              </Button>
+              </Button> */}
             </GridItem>
           </GridContainer>
         </div>

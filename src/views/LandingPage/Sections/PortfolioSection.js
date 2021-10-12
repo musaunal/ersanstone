@@ -41,7 +41,7 @@ import work23 from "assets/img/mezarlar/r23.jpg";
 import work24 from "assets/img/mezarlar/r24.jpg";
 import work25 from "assets/img/mezarlar/r25.jpg";
 import work26 from "assets/img/mezarlar/r26.jpg";
-// import work27 from "assets/img/mezarlar/r27.jpg";
+import work27 from "assets/img/mezarlar/r27.jpg";
 import work28 from "assets/img/mezarlar/r28.jpg";
 import work29 from "assets/img/mezarlar/r29.jpg";
 import work30 from "assets/img/mezarlar/r30.jpg";
@@ -127,6 +127,7 @@ export default function PortfolioSection(props) {
                       <img alt="..." src={work36} className={navImageClasses} />
                     </GridItem>
                     <GridItem xs={6} sm={6} md={2}>
+                      <img alt="..." src={work27} className={navImageClasses} />
                       <img alt="..." src={work11} className={navImageClasses} />
                       <img alt="..." src={work8} className={navImageClasses} />
                       <img alt="..." src={work22} className={navImageClasses} />
@@ -137,6 +138,7 @@ export default function PortfolioSection(props) {
                       <img alt="..." src={work26} className={navImageClasses} />
                     </GridItem>
                     <GridItem xs={6} sm={6} md={2}>
+                      <img alt="..." src={work21} className={navImageClasses} />
                       <img alt="..." src={work23} className={navImageClasses} />
                       <img alt="..." src={work9} className={navImageClasses} />
                       <img alt="..." src={work6} className={navImageClasses} />
