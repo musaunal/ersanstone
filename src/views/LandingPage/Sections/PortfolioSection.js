@@ -51,6 +51,10 @@ import work33 from "assets/img/mezarlar/r33.jpg";
 import work34 from "assets/img/mezarlar/r34.jpg";
 import work35 from "assets/img/mezarlar/r35.jpg";
 import work36 from "assets/img/mezarlar/r36.jpg";
+import work37 from "assets/img/mezarlar/r37.jpg";
+import work38 from "assets/img/mezarlar/r38.jpg";
+import work39 from "assets/img/mezarlar/r39.jpg";
+import work40 from "assets/img/mezarlar/r40.jpg";
 
 import b1 from "assets/img/mutfak/b1.jpeg";
 import b2 from "assets/img/mutfak/b2.jpeg";
@@ -105,6 +109,7 @@ export default function PortfolioSection(props) {
                 tabButton: "Mezar", tabIcon: Collections, tabContent: (
                   <GridContainer justify="center">
                     <GridItem xs={6} sm={6} md={2}>
+                      <img alt="..." src={work37} className={navImageClasses} />
                       <img alt="..." src={work2} className={navImageClasses} />
                       <img alt="..." src={work10} className={navImageClasses} />
                       <img alt="..." src={work14} className={navImageClasses} />
@@ -116,6 +121,7 @@ export default function PortfolioSection(props) {
                       <img alt="..." src={work35} className={navImageClasses} />
                     </GridItem>
                     <GridItem xs={6} sm={6} md={2}>
+                      <img alt="..." src={work38} className={navImageClasses} />
                       <img alt="..." src={work1} className={navImageClasses} />
                       <img alt="..." src={work12} className={navImageClasses} />
                       <img alt="..." src={work13} className={navImageClasses} />
@@ -127,6 +133,7 @@ export default function PortfolioSection(props) {
                       <img alt="..." src={work36} className={navImageClasses} />
                     </GridItem>
                     <GridItem xs={6} sm={6} md={2}>
+                      <img alt="..." src={work39} className={navImageClasses} />
                       <img alt="..." src={work27} className={navImageClasses} />
                       <img alt="..." src={work11} className={navImageClasses} />
                       <img alt="..." src={work8} className={navImageClasses} />
@@ -138,6 +145,7 @@ export default function PortfolioSection(props) {
                       <img alt="..." src={work26} className={navImageClasses} />
                     </GridItem>
                     <GridItem xs={6} sm={6} md={2}>
+                      <img alt="..." src={work40} className={navImageClasses} />
                       <img alt="..." src={work21} className={navImageClasses} />
                       <img alt="..." src={work23} className={navImageClasses} />
                       <img alt="..." src={work9} className={navImageClasses} />
