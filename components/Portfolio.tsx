@@ -6,6 +6,7 @@ import Image from 'next/image'
 import Lightbox from 'yet-another-react-lightbox'
 import 'yet-another-react-lightbox/styles.css'
 import clsx from 'clsx'
+import { track } from '@/lib/analytics'
 
 type ImageItem = { src: string; alt: string }
 
@@ -107,7 +108,7 @@ export default function Portfolio() {
           {categories.map((cat, i) => (
             <button
               key={cat.id}
-              onClick={() => setActiveIdx(i)}
+              onClick={() => { setActiveIdx(i); track.portfolio(cat.label) }}
               className={clsx(
                 'px-5 py-2 text-sm font-medium transition-colors',
                 activeIdx === i

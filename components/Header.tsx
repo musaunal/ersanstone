@@ -6,9 +6,10 @@ import { FiMenu, FiX } from 'react-icons/fi'
 import clsx from 'clsx'
 
 const navLinks = [
-  { href: '#about', label: 'Biz Kimiz' },
-  { href: '#mission', label: 'Neden Biz' },
-  { href: '#portfolio', label: 'Referanslarımız' },
+  { href: '#about', label: 'Hakkımızda' },
+  { href: '#services', label: 'Hizmetler' },
+  { href: '#portfolio', label: 'Referanslar' },
+  { href: '#faq', label: 'SSS' },
   { href: '#contact', label: 'İletişim' },
 ]
 

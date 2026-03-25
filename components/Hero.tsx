@@ -23,7 +23,7 @@ export default function Hero() {
       <motion.div className="absolute inset-0 scale-110" style={{ y }}>
         <Image
           src="/images/hero.jpg"
-          alt="Ersan Stone mermer ve doğal taş işleri Isparta"
+          alt="Ersan Stone – Isparta mezar yapımı, mermer ve doğal taş işleri"
           fill
           priority
           className="object-cover"

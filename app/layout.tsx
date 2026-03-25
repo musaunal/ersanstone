@@ -68,10 +68,16 @@ const localBusinessSchema = {
     postalCode: '32200',
     addressCountry: 'TR',
   },
+  geo: {
+    '@type': 'GeoCoordinates',
+    latitude: '37.7753162',
+    longitude: '30.557042',
+  },
+  hasMap: 'https://maps.app.goo.gl/DD34xd8oNqiERYJs7',
   priceRange: '₺₺',
   foundingDate: '2021',
   sameAs: [
-    'https://share.google/PEHGt47ivdSZOiG5w',
+    'https://maps.app.goo.gl/DD34xd8oNqiERYJs7',
     'https://instagram.com/ersanstone',
     'https://www.facebook.com/Ersan-Stone-107310218253862',
   ],

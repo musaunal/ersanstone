@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react'
 import { FaWhatsapp } from 'react-icons/fa'
 import { motion, AnimatePresence } from 'framer-motion'
+import { track } from '@/lib/analytics'
 
 export default function WhatsAppButton() {
   const [visible, setVisible] = useState(false)
@@ -55,6 +56,7 @@ export default function WhatsAppButton() {
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp ile iletişime geçin"
+            onClick={() => track.whatsapp('floating_button')}
             onMouseEnter={() => setShowTooltip(true)}
             onMouseLeave={() => setShowTooltip(false)}
             className="relative flex items-center justify-center w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full shadow-lg shadow-green-500/30 transition-colors"
