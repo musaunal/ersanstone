@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { FaWhatsapp, FaInstagram, FaFacebook } from 'react-icons/fa'
-import { FiPhone } from 'react-icons/fi'
+import { FiPhone, FiMapPin } from 'react-icons/fi'
 
 const contactItems = [
   {
@@ -101,6 +101,23 @@ export default function Contact() {
               </motion.a>
             ))}
           </div>
+
+          {/* Location — NAP (Name/Address/Phone) on-page signal for local SEO */}
+          <motion.address
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="not-italic flex items-start gap-4 p-6 border border-stone-100 mb-6"
+          >
+            <div className="flex-shrink-0 w-12 h-12 bg-stone-100 rounded-full flex items-center justify-center">
+              <FiMapPin className="w-5 h-5 text-stone-500" />
+            </div>
+            <div>
+              <p className="text-xs text-stone-400 uppercase tracking-wider mb-1">Konum</p>
+              <p className="text-stone-700 font-medium">Isparta, Türkiye</p>
+              <p className="text-sm text-stone-400 mt-0.5">Merkez ve çevre illere hizmet</p>
+            </div>
+          </motion.address>
 
           {/* WhatsApp CTA */}
           <motion.div

@@ -29,11 +29,15 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.2 }}
           className="text-sm uppercase tracking-[0.3em] text-amber-400 mb-4 font-medium"
         >
-          Doğal Taş & Mermer
+          Isparta &bull; Doğal Taş & Mermer
         </motion.p>
-        <h1 className="font-playfair text-5xl sm:text-6xl md:text-7xl font-bold mb-6 leading-tight">
+        {/* H1: brand + primary service keyword for SEO */}
+        <h1 className="font-playfair text-5xl sm:text-6xl md:text-7xl font-bold mb-3 leading-tight">
           Ersan Stone
         </h1>
+        <p className="text-base text-white/60 tracking-wide mb-3 font-light">
+          Mermer · Granit · Traverten · Doğal Taş
+        </p>
         <p className="text-lg md:text-xl text-white/85 font-light leading-relaxed mb-10">
           Ölümün Ayırdığı Sevdiklerinize,
           <br className="hidden sm:block" /> Ölümsüz Eserler Sunalım

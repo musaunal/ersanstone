@@ -15,13 +15,14 @@ type Category = {
   images: ImageItem[]
 }
 
+// Descriptive, keyword-rich alt texts drive Google Images traffic for craftsmen
 const categories: Category[] = [
   {
     id: 'mezar',
     label: 'Mezar Anıtları',
     images: Array.from({ length: 40 }, (_, i) => ({
       src: `/images/mezarlar/r${i + 1}.jpg`,
-      alt: `Mezar Anıtı ${i + 1}`,
+      alt: `Granit mezar taşı Isparta – Ersan Stone referans ${i + 1}`,
     })),
   },
   {
@@ -29,23 +30,23 @@ const categories: Category[] = [
     label: 'Mutfak',
     images: Array.from({ length: 13 }, (_, i) => ({
       src: `/images/mutfak/mu${i + 1}.jpg`,
-      alt: `Mutfak Tezgahı ${i + 1}`,
+      alt: `Mermer mutfak tezgahı Isparta – Ersan Stone referans ${i + 1}`,
     })),
   },
   {
     id: 'banyo',
     label: 'Banyo',
     images: [
-      { src: '/images/mutfak/b1.jpeg', alt: 'Banyo 1' },
-      { src: '/images/mutfak/b2.jpeg', alt: 'Banyo 2' },
+      { src: '/images/mutfak/b1.jpeg', alt: 'Mermer banyo kaplaması Isparta – Ersan Stone referans 1' },
+      { src: '/images/mutfak/b2.jpeg', alt: 'Mermer banyo kaplaması Isparta – Ersan Stone referans 2' },
     ],
   },
   {
     id: 'hamam',
     label: 'Hamam',
     images: [
-      { src: '/images/mutfak/h1.jpeg', alt: 'Hamam 1' },
-      { src: '/images/mutfak/h2.jpeg', alt: 'Hamam 2' },
+      { src: '/images/mutfak/h1.jpeg', alt: 'Mermer hamam Isparta – Ersan Stone referans 1' },
+      { src: '/images/mutfak/h2.jpeg', alt: 'Mermer hamam Isparta – Ersan Stone referans 2' },
     ],
   },
   {
@@ -53,7 +54,7 @@ const categories: Category[] = [
     label: 'Merdiven',
     images: Array.from({ length: 4 }, (_, i) => ({
       src: `/images/mutfak/m${i + 1}.jpg`,
-      alt: `Merdiven ${i + 1}`,
+      alt: `Mermer merdiven basamağı Isparta – Ersan Stone referans ${i + 1}`,
     })),
   },
   {
@@ -61,7 +62,7 @@ const categories: Category[] = [
     label: 'Balkon',
     images: Array.from({ length: 5 }, (_, i) => ({
       src: `/images/mutfak/bl${i + 1}.jpg`,
-      alt: `Balkon ${i + 1}`,
+      alt: `Doğal taş balkon kaplaması Isparta – Ersan Stone referans ${i + 1}`,
     })),
   },
 ]
