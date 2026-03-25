@@ -30,14 +30,6 @@ export const metadata: Metadata = {
     siteName: 'Ersan Stone',
     locale: 'tr_TR',
     type: 'website',
-    images: [
-      {
-        url: 'https://ersanstone.com/images/hero.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Isparta Mezar Yapımı – Ersan Stone Granit ve Mermer Anıt',
-      },
-    ],
   },
 
   twitter: {
@@ -45,7 +37,6 @@ export const metadata: Metadata = {
     title: 'Isparta Mezar Yapımı | Ersan Stone',
     description:
       'Granit ve mermer mezar taşı, mutfak tezgahı, banyo ve merdiven. Isparta\'da 5 yıl garantili doğal taş işçiliği.',
-    images: ['https://ersanstone.com/images/hero.jpg'],
   },
 }
 

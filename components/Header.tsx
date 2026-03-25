@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { FaWhatsapp, FaInstagram, FaFacebook } from 'react-icons/fa'
 import { FiMenu, FiX } from 'react-icons/fi'
 import clsx from 'clsx'
+import Logo from '@/components/Logo'
 
 const navLinks = [
   { href: '#about', label: 'Hakkımızda' },
@@ -52,15 +53,16 @@ export default function Header() {
       )}
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Logo */}
+        {/* Logo — currentColor in the SVG inherits this anchor's text color */}
         <a
           href="#"
+          aria-label="Ersan Stone – Ana Sayfa"
           className={clsx(
-            'font-playfair text-xl font-bold tracking-wide transition-colors',
+            'transition-colors',
             scrolled ? 'text-stone-800' : 'text-white'
           )}
         >
-          Ersan Stone
+          <Logo />
         </a>
 
         {/* Desktop nav */}
