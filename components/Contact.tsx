@@ -114,8 +114,8 @@ export default function Contact() {
             </div>
             <div>
               <p className="text-xs text-stone-400 uppercase tracking-wider mb-1">Konum</p>
-              <p className="text-stone-700 font-medium">Isparta, Türkiye</p>
-              <p className="text-sm text-stone-400 mt-0.5">Merkez ve çevre illere hizmet</p>
+              <p className="text-stone-700 font-medium">Sanayi, 3232. Sk. No:13</p>
+              <p className="text-sm text-stone-400 mt-0.5">32200 Merkez / Isparta</p>
             </div>
           </motion.address>
 

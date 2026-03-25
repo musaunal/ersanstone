@@ -1,18 +1,36 @@
 'use client'
 
-import { motion } from 'framer-motion'
+import { useRef } from 'react'
+import { motion, useScroll, useTransform } from 'framer-motion'
+import Image from 'next/image'
 
 export default function Hero() {
+  const ref = useRef<HTMLElement>(null)
+
+  // JS-based parallax — works on iOS Safari (CSS background-attachment:fixed does not)
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ['start start', 'end start'],
+  })
+  const y = useTransform(scrollYProgress, [0, 1], ['0%', '25%'])
+
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Background with parallax effect via background-attachment */}
-      <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{
-          backgroundImage: "url('/images/hero.jpg')",
-          backgroundAttachment: 'fixed',
-        }}
-      />
+    <section
+      ref={ref}
+      className="relative h-screen flex items-center justify-center overflow-hidden"
+    >
+      {/* Hero image — priority forces preload, fixing LCP score */}
+      <motion.div className="absolute inset-0 scale-110" style={{ y }}>
+        <Image
+          src="/images/hero.jpg"
+          alt="Ersan Stone mermer ve doğal taş işleri Isparta"
+          fill
+          priority
+          className="object-cover"
+          sizes="100vw"
+        />
+      </motion.div>
+
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/55" />
 
@@ -29,8 +47,9 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.2 }}
           className="text-sm uppercase tracking-[0.3em] text-amber-400 mb-4 font-medium"
         >
-          Isparta &bull; Doğal Taş & Mermer
+          Isparta Mezar Yapımı &bull; Doğal Taş & Mermer
         </motion.p>
+
         {/* H1: brand + primary service keyword for SEO */}
         <h1 className="font-playfair text-5xl sm:text-6xl md:text-7xl font-bold mb-3 leading-tight">
           Ersan Stone
@@ -42,6 +61,7 @@ export default function Hero() {
           Ölümün Ayırdığı Sevdiklerinize,
           <br className="hidden sm:block" /> Ölümsüz Eserler Sunalım
         </p>
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
             href="#portfolio"
@@ -66,10 +86,7 @@ export default function Hero() {
         className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/60 flex flex-col items-center gap-2"
       >
         <span className="text-xs tracking-widest uppercase">Keşfet</span>
-        <motion.div
-          animate={{ y: [0, 6, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-        >
+        <motion.div animate={{ y: [0, 6, 0] }} transition={{ duration: 1.5, repeat: Infinity }}>
           <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 9l-7 7-7-7" />
           </svg>
