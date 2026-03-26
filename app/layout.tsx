@@ -95,17 +95,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
         />
         {/* Google Analytics GA4 */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-T6QF3WXQ7L" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
+        {process.env.NEXT_PUBLIC_GA_ID && (
+          <>
+            <script async src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GA_ID}`} />
+            <script
+              dangerouslySetInnerHTML={{
+                __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-T6QF3WXQ7L');
+              gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
             `,
-          }}
-        />
+              }}
+            />
+          </>
+        )}
       </head>
       <body className={`${inter.variable} ${playfair.variable} font-sans antialiased`}>
         {children}
