@@ -9,6 +9,7 @@ import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
 import CookieConsent from '@/components/CookieConsent'
+import BlogPreview from '@/components/BlogPreview'
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Services />
       <Portfolio />
       <Testimonials />
+      <BlogPreview />
       <FAQ />
       <Contact />
       <Footer />

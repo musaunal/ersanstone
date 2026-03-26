@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Link from 'next/link'
 import { FaWhatsapp, FaInstagram, FaFacebook } from 'react-icons/fa'
 import { FiMenu, FiX } from 'react-icons/fi'
 import clsx from 'clsx'
@@ -68,20 +69,21 @@ export default function Header() {
 
         {/* Desktop nav */}
         <nav className="hidden md:flex items-center gap-8">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              className={clsx(
-                'text-sm font-medium tracking-wide transition-colors',
-                scrolled
-                  ? 'text-stone-600 hover:text-amber-600'
-                  : 'text-white/90 hover:text-white'
-              )}
-            >
-              {link.label}
-            </a>
-          ))}
+          {navLinks.map((link) => {
+            const className = clsx(
+              'text-sm font-medium tracking-wide transition-colors',
+              scrolled ? 'text-stone-600 hover:text-amber-600' : 'text-white/90 hover:text-white'
+            )
+            return link.href.startsWith('/') ? (
+              <Link key={link.href} href={link.href} className={className}>
+                {link.label}
+              </Link>
+            ) : (
+              <a key={link.href} href={link.href} className={className}>
+                {link.label}
+              </a>
+            )
+          })}
         </nav>
 
         {/* Social icons */}
@@ -125,16 +127,18 @@ export default function Header() {
         )}
       >
         <nav className="flex flex-col divide-y divide-stone-100">
-          {navLinks.map((link) => (
-            <a
-              key={link.href}
-              href={link.href}
-              onClick={() => setMenuOpen(false)}
-              className="px-6 py-4 text-stone-700 hover:text-amber-600 hover:bg-stone-50 transition-colors"
-            >
-              {link.label}
-            </a>
-          ))}
+          {navLinks.map((link) => {
+            const className = 'px-6 py-4 text-stone-700 hover:text-amber-600 hover:bg-stone-50 transition-colors'
+            return link.href.startsWith('/') ? (
+              <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className={className}>
+                {link.label}
+              </Link>
+            ) : (
+              <a key={link.href} href={link.href} onClick={() => setMenuOpen(false)} className={className}>
+                {link.label}
+              </a>
+            )
+          })}
           <div className="flex gap-5 px-6 py-4">
             {socialLinks.map((s) => (
               <a
