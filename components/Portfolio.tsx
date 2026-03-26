@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useCallback } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import Image from 'next/image'
 import Lightbox from 'yet-another-react-lightbox'
@@ -67,6 +67,27 @@ const categories: Category[] = [
     })),
   },
 ]
+
+function ImageWithSkeleton({ src, alt, sizes }: { src: string; alt: string; sizes: string }) {
+  const [loaded, setLoaded] = useState(false)
+  const handleLoad = useCallback(() => setLoaded(true), [])
+
+  return (
+    <>
+      {!loaded && (
+        <div className="absolute inset-0 bg-stone-200 animate-pulse" />
+      )}
+      <Image
+        src={src}
+        alt={alt}
+        fill
+        className={`object-cover transition-all duration-500 group-hover:scale-110 ${loaded ? 'opacity-100' : 'opacity-0'}`}
+        sizes={sizes}
+        onLoad={handleLoad}
+      />
+    </>
+  )
+}
 
 export default function Portfolio() {
   const [activeIdx, setActiveIdx] = useState(0)
@@ -141,11 +162,9 @@ export default function Portfolio() {
                 className="relative aspect-square overflow-hidden group focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
                 aria-label={img.alt}
               >
-                <Image
+                <ImageWithSkeleton
                   src={img.src}
                   alt={img.alt}
-                  fill
-                  className="object-cover transition-transform duration-500 group-hover:scale-110"
                   sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, 20vw"
                 />
                 {/* Hover overlay */}

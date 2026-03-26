@@ -8,5 +8,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 1,
     },
+    {
+      url: 'https://ersanstone.com/blog/isparta-mezar-tasi-rehberi',
+      lastModified: new Date('2024-11-01'),
+      changeFrequency: 'yearly',
+      priority: 0.7,
+    },
   ]
 }

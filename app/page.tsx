@@ -8,6 +8,7 @@ import FAQ from '@/components/FAQ'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
+import CookieConsent from '@/components/CookieConsent'
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Contact />
       <Footer />
       <WhatsAppButton />
+      <CookieConsent />
     </main>
   )
 }

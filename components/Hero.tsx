@@ -22,7 +22,7 @@ export default function Hero() {
       {/* Hero image — priority forces preload, fixing LCP score */}
       <motion.div className="absolute inset-0 scale-110" style={{ y }}>
         <Image
-          src="/images/hero.jpg"
+          src="/images/hero.webp"
           alt="Ersan Stone – Isparta mezar yapımı, mermer ve doğal taş işleri"
           fill
           priority
