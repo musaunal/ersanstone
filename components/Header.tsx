@@ -12,6 +12,7 @@ const navLinks = [
   { href: '#portfolio', label: 'Referanslar' },
   { href: '#faq', label: 'SSS' },
   { href: '#contact', label: 'İletişim' },
+  { href: '/blog', label: 'Blog' },
 ]
 
 const socialLinks = [
