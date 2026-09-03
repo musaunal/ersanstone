@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 
 // Update this URL to change where the QR code sends visitors — no need to reprint the code.
-const REDIRECT_URL =
-  'https://drive.google.com/file/d/1P7Fg5V0H4drWZ5N4j61p1VlIL6xPmd7B/view?usp=sharing'
+const REDIRECT_URL = 'https://youtube.com/shorts/bgYAHUwzYHQ?si=PnVgbqsWpn3U1wNW'
 
 export const metadata: Metadata = {
   title: 'Yönlendiriliyor... | Ersan Stone',
